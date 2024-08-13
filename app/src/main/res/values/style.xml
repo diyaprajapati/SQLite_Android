@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Light theme -->
+    <style name="AppTheme.Light" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#CCCCCC</item>
+        <item name="colorAccent">#FF4081</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <!-- Dark theme -->
+    <style name="AppTheme.Dark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#333333</item>
+        <item name="colorAccent">#FF4081</item>
+        <item name="android:background">#363737</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+</resources>

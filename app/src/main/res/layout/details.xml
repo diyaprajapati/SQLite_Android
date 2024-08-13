@@ -3,6 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
+    <ToggleButton
+        android:id="@+id/themeToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:button="@null"
+        android:checked="false"
+        android:drawableTop="@drawable/ic_sun_foreground"
+        android:drawableBottom="@drawable/ic_moon_foreground"
+        android:textOff=""
+        android:textOn="" />
+
     <ListView
         android:id="@+id/user_list"
         android:layout_width="fill_parent"

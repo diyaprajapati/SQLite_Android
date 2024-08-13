@@ -69,22 +69,6 @@ public class DbHandler extends SQLiteOpenHelper {
         return userList;
     }
 
-    // Get User Details based on userid
-    @SuppressLint("Range")
-    public ArrayList<HashMap<String, String>> GetUserByUserId(int userid){
-        SQLiteDatabase db = this.getWritableDatabase();
-        ArrayList<HashMap<String, String>> userList = new ArrayList<>();
-        String query = "SELECT name, location, designation FROM "+ TABLE_Users;
-        Cursor cursor = db.query(TABLE_Users, new String[]{KEY_NAME, KEY_LOC, KEY_DESG}, KEY_ID+ "=?",new String[]{String.valueOf(userid)},null, null, null, null);
-        if (cursor.moveToNext()){
-            HashMap<String,String> user = new HashMap<>();
-            user.put("name",cursor.getString(cursor.getColumnIndex(KEY_NAME)));
-            user.put("designation",cursor.getString(cursor.getColumnIndex(KEY_DESG)));
-            user.put("location",cursor.getString(cursor.getColumnIndex(KEY_LOC)));
-            userList.add(user);
-        }
-        return  userList;
-    }
     // Delete User Details
     public void DeleteUser(int userid){
         SQLiteDatabase db = this.getWritableDatabase();
